@@ -6,4 +6,4 @@ class ApplicationController < ActionController::Base
   def hello
     redirect_to 'sessions#new' if !session[:name]
   end
-end 
+end

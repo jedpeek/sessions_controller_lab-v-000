@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def hello
-    redirect_to action: "/sessions/new"
+    redirect_to controller: 'sessions', action: 'new'
   end
 end
